@@ -1,13 +1,39 @@
 <input value="hello it-kamasutra" class="hello-message input" id="hello-message">
+<select name="" id="cities">
+    <option>Kiev</option>
+    <option>Minsk</option>
+    <option selected="selected">Moscow</option>
+</select>
+
+<textarea name="" id="hobbies" cols="30" rows="10">JS, CSS, HTML</textarea>
+
+<div id="image"><img id="avatar" src="https://sun1-30.userapi.com/s/v1/if2/OlhzHm12JpisyjxAdnQrDBoaFJrHScif8rtRnkdwzY6NM1y9VPeGhJh9O_dMwnj8XPAF3rAdq9B1kg67s8zxPlzP.jpg?size=200x300&quality=96&crop=0,0,853,1280&ava=1" alt="avatar"></div>
 
 <script>
     var helloMessageElement;
     var helloMessageId;
     helloMessageId = "hello-message";
     helloMessageElement = document.getElementById(helloMessageId);
-    alert(helloMessageElement.className);
-    alert(helloMessageElement.id);
-    alert(helloMessageElement.value);
+    //alert(helloMessageElement.className);
+    //alert(helloMessageElement.id);
+    //alert(helloMessageElement.value);
+    var citiesId = "cities";
+    var citiesEl = document.getElementById(citiesId);
+
+    var hobbiesId = "hobbies";
+    var hobbiesEl = document.getElementById(hobbiesId);
+    
+    //alert(hobbiesEl.value);
+
+    var imageId = "image";
+    var imageEl = document.getElementById(imageId);
+
+    //alert(citiesEl.innerHTML);
+
+    var avatarId = "avatar";
+    var avatarEl = document.getElementById(avatarId);
+
+    alert(avatarEl.alt);
 
 
 </script>
